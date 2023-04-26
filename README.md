@@ -12,5 +12,5 @@ ls -l --block-size=M
 ```
 * Compress with ps2pdf
 ```bash
-ps2pdf -dPDFSETTINGS=/ebook mietvertrag.pdf mietvertrag_compressed.pdf
+ps2pdf -dPDFSETTINGS=/ebook input.pdf output.pdf
 ```
