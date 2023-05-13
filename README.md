@@ -14,3 +14,8 @@ ls -l --block-size=M
 ```bash
 ps2pdf -dPDFSETTINGS=/ebook input.pdf output.pdf
 ```
+
+## Remove all exited docker container
+```bash
+docker rm (docker ps --filter status=exited -q)
+```
