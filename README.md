@@ -48,3 +48,8 @@ docker rm (docker ps --filter status=exited -q)
 ```
 git config credential.helper store
 ```
+
+## Create and save alias in fish
+```
+alias --save cl=clear
+```
