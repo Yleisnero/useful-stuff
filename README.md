@@ -43,3 +43,8 @@ docker rm (docker ps --filter status=exited -q)
   alias cl="clear"
   ```
 * Use [existing git aliases](https://gist.github.com/DavidToca/3086571)
+
+## Activate git credentials helper (for http)
+```
+git config credential.helper store
+```
