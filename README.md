@@ -15,6 +15,11 @@ ls -l --block-size=M
 ps2pdf -dPDFSETTINGS=/ebook input.pdf output.pdf
 ```
 
+### Merge multiple pdfs
+```
+pdfunite *.pdf all.pdf
+```
+
 ## Remove all exited docker container
 ```bash
 docker rm (docker ps --filter status=exited -q)
