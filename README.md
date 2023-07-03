@@ -58,3 +58,14 @@ git config credential.helper store
 ```
 alias --save cl=clear
 ```
+
+## Enter ssh key only once per terminal session 
+* Add this line to the bottom of the ~/.zshrc
+```
+[ -z "$SSH_AUTH_SOCK" ] && eval "$(ssh-agent -s)"
+```
+* Add this lines to the ~/.ssh/config
+```
+Host *
+AddKeysToAgent yes
+```
