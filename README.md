@@ -67,9 +67,10 @@ alias --save cl=clear
 ```
 
 ## Enter ssh key only once per terminal session 
-* Add this line to the bottom of the ~/.zshrc
+* Add these lines to the bottom of the ~/.zshrc
 ```
 [ -z "$SSH_AUTH_SOCK" ] && eval "$(ssh-agent -s)"
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 ```
 * Add this lines to the ~/.ssh/config
 ```
