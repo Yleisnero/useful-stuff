@@ -69,3 +69,23 @@ alias --save cl=clear
 Host *
 AddKeysToAgent yes
 ```
+
+## Fix wsl "could not resolve hostname"
+* Create wsl.conf file
+```
+sudo vim /etc/wsl.conf
+```
+* Add the following lines
+```
+[network]
+generateResolvConf = false
+```
+* Delete old resolv.conf and create new
+```
+sudo rm -f /etc/resolv.conf
+sudo vim /etc/resolv.conf
+```
+* Add your nameserver
+```
+nameserver 8.8.8.8
+```
