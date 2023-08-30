@@ -27,6 +27,9 @@ docker rm (docker ps --filter status=exited -q)
 
 ## Oh My Zsh (on WSL2)
 * Install [zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
+  ```
+  sudo apt install zsh
+  ```
 * Install [Oh My Zsh](https://ohmyz.sh/)
   ```
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
