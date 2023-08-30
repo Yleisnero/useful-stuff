@@ -56,6 +56,13 @@ sudo chsh -s $(which zsh) $(whoami)
   ```
 * Use [existing git aliases](https://gist.github.com/DavidToca/3086571)
 
+## Use nvm with zsh
+* Add nvm to ~/.zshrc
+```
+export NVM_DIR=~/.nvm
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+```
+
 ## Activate git credentials helper (for http)
 ```
 git config credential.helper store
