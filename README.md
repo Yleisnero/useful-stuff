@@ -38,6 +38,10 @@ docker rm (docker ps --filter status=exited -q)
   ```
   git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
   ```
+* Set zsh as default
+```
+sudo chsh -s $(which zsh) $(whoami)
+```
 * Add useful plugins to ~/.zshrc (nano ~/.zshrc)
   ```
   plugins=(
