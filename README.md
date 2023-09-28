@@ -104,3 +104,10 @@ sudo vim /etc/resolv.conf
 ```
 nameserver 8.8.8.8
 ```
+
+## Start chrome without CORS enabled (Windows)
+* Click Ctrl + R
+* Type
+```
+chrome.exe --user-data-dir="C://Chrome dev session" --disable-web-security
+```
