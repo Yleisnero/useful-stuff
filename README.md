@@ -111,3 +111,9 @@ nameserver 8.8.8.8
 ```
 chrome.exe --user-data-dir="C://Chrome dev session" --disable-web-security
 ```
+
+## Create python3 virtual environment
+```
+python3 -m venv venv
+source venv/bin/activate
+```
