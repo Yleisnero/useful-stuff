@@ -132,3 +132,8 @@ setup(
 )
 ```
 Install: `pip install -e /path/to/script/folder`
+
+## Oh my zsh alias to install pip package and put it into the requirements.txt
+```
+alias pip_r='_pip_r() { pip install "$1" && pip freeze | grep "$1" >> requirements.txt ; }; _pip_r'
+```
