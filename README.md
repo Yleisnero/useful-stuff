@@ -117,3 +117,18 @@ chrome.exe --user-data-dir="C://Chrome dev session" --disable-web-security
 python3 -m venv venv
 source venv/bin/activate
 ```
+
+## Make python script executable
+```
+from setuptools import setup
+setup(
+    name='myscript',
+    version='0.0.1',
+    entry_points={
+        'console_scripts': [
+            'myscript=myscript:run'
+        ]
+    }
+)
+```
+Install: `pip install -e /path/to/script/folder`
