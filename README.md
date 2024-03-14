@@ -137,3 +137,8 @@ Install: `pip install -e /path/to/script/folder`
 ```
 alias pip_r='_pip_r() { pip install "$1" && pip freeze | grep "$1" >> requirements.txt ; }; _pip_r'
 ```
+
+## Undo latest local commit
+```
+git reset HEAD~ 
+```
