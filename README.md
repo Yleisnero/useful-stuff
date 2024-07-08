@@ -20,9 +20,19 @@ ps2pdf -dPDFSETTINGS=/ebook input.pdf output.pdf
 pdfunite *.pdf all.pdf
 ```
 
-## Remove all exited docker container
+## Remove docker container and images
+### Remove all exited docker container
 ```bash
 docker rm (docker ps --filter status=exited -q)
+```
+### Remove all containers including its volumes
+```
+docker rm -vf $(docker ps -aq)
+```
+
+### Remove all the images
+```
+docker rmi -f $(docker images -aq)
 ```
 
 ## Oh My Zsh (on WSL2)
