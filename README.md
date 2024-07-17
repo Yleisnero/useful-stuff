@@ -157,3 +157,12 @@ alias pip_r='_pip_r() { pip install "$1" && pip freeze | grep "$1" >> requiremen
 ```
 git reset HEAD~ 
 ```
+
+## Remove tracked file after adding it to .gitignore
+```
+git rm --cached <filename>
+```
+or
+```
+git rm --cached -r <folder>
+```
