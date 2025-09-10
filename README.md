@@ -166,3 +166,16 @@ or
 ```
 git rm --cached -r <folder>
 ```
+
+## New ssh key for e.g. GitHub
+```
+ssh-keygen -t ed25519 -C "your_email@example.com"
+```
+or 
+```
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+```
+To get the public key do
+```
+cat ~/.ssh/id_rsa.pub 
+```
