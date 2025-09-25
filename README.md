@@ -15,10 +15,21 @@ ls -l --block-size=M
 ps2pdf -dPDFSETTINGS=/ebook input.pdf output.pdf
 ```
 
-### Merge multiple pdfs
+## Merge multiple pdfs
 ```
-pdfunite *.pdf all.pdf
+pdfunite 1.pdf 2.pdf 3.pdf all.pdf
 ```
+
+## Unite multiple pdfs
+```
+pdfunite page1.pdf page2.pdf page3.pdf final-pages1-3.pdf
+```
+
+## Remove page from pdf
+```
+qpdf input.pdf --pages . 1-12 -- output.pdf
+```
+Only keeps pages 1 - 12, removes the rest.
 
 ## Remove docker container and images
 ### Remove all exited docker container
