@@ -190,3 +190,8 @@ To get the public key do
 ```
 cat ~/.ssh/id_rsa.pub 
 ```
+
+## Vim: Replace pick with s in interactive rebase to squash commits
+```
+:2,$s/^pick/s/g
+```
