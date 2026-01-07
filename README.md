@@ -34,7 +34,7 @@ Only keeps pages 1 - 12, removes the rest.
 ## Remove docker container and images
 ### Remove all exited docker container
 ```bash
-docker rm (docker ps --filter status=exited -q)
+docker rm $(docker ps --filter status=exited -q)
 ```
 ### Remove all containers including its volumes
 ```
@@ -128,7 +128,7 @@ sudo vim /etc/resolv.conf
 ```
 * Add your nameserver
 ```
-nameserver 8.8.8.8
+nameserver 1.1.1.1
 ```
 
 ## Start chrome without CORS enabled (Windows)
